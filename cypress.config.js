@@ -10,6 +10,6 @@ module.exports = defineConfig({
     specPattern: '**/*.{feature, feature.js}'
   },
   "compilerOptions":{
-    "types": ["cypress", "node"]
+    "types": ["cypress", "node", "cypress-real-events"]
   }
 });
