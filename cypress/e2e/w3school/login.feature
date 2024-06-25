@@ -8,4 +8,4 @@ Feature: User Login W3schools
   Scenario: Login in TestGrid
     Given I open W3schools Page
     When I submit Login with valid email "lesleydoannguyen01@gmail.com" and password "Lan@12345"
-    Then I can see W3schools Dashboard
+    Then I can see W3schools Dashboard is "pathfinder.w3schools.com"

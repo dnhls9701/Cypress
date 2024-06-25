@@ -10,6 +10,7 @@ When('I submit Login with valid email {string} and password {string}', (email, p
   cy.get('button[type="submit"]').click();
 });
 
-Then('I can see W3schools Dashboard', () => {
-    cy.url().should('include', 'pathfinder.w3schools.com');
+Then('I can see W3schools Dashboard is {string}', (expectedPath) => {
+    cy.url().should('include', expectedPath);
 });
+
