@@ -5,7 +5,8 @@ Feature: User Login W3schools
   So that I can access my account.
 
   @happycase
-  Scenario: Login in TestGrid
+  Scenario: Login in W3schools
     Given I open W3schools Page
-    When I submit Login with valid email "lesleydoannguyen01@gmail.com" and password "Lan@12345"
+    When I enter valid email "lesleydoannguyen01@gmail.com" and password "Lan@12345"
+    And I click on Login button to login
     Then I can see W3schools Dashboard
